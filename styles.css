@@ -1,0 +1,577 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Remove horizontal scroll to fix white space issue */
+html, body {
+    overflow-x: hidden;  /* Disable horizontal scrolling */
+}
+
+
+.navbar, .progress-bar {
+    position: fixed; /* Fix the position of navbar and progress bar */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* To ensure navbar and progress bar stays on top of other elements */
+}
+.progress-bar
+{
+    position: fixed; /* Fix the position of navbar and progress bar */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* To ensure navbar and progress bar stays on top of other elements */
+    height: 2px; !important
+    color: white;
+}
+
+.navbar-logo {
+    width: 40px; /* Adjust the width as per your requirement */
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.landing-panel {
+
+    height: 100vh;
+    background-image: url('LandingPicture.png'),linear-gradient(to right, #7f6449, #c1bfbd);
+    background-size: contain,cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    margin-top: 56px; 
+}
+
+
+.typewriter-text {
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center; /* Center the text. */
+    max-width: 70%; /* Limit width to keep layout neat on wide screens. */
+    background-color: rgba(255, 255, 255, 0.8);   /* semi-transparent white background */
+    padding: 10px;   /* Some padding for breathing space */
+    border-radius: 5px;  /* Optional: to round the corners of the background */
+}
+
+.content-section {   
+    height: 100vh;
+	background-image: url('Section1.png');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%; /* Added this for the foreground image */
+}
+
+.calculator-container{
+	height: 100vh;
+    background-size: cover;
+    background-position: center;
+	padding-top: 20px;
+}
+
+.BMICalculatorHeading{
+	color: white;
+}
+
+.bg1 {
+    background-image: url('path-to-bg1.jpg');
+}
+
+.bg2 {
+    background-image: url('path-to-bg2.jpg');
+}
+
+.bg3 {
+    background-image: url('path-to-bg3.jpg');
+}
+
+.contact-me {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.fa-whatsapp{
+	margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.foreground-img {
+    position: absolute;
+    top: 50%;
+    left: 0;  /* Modified this for positioning */
+    transform: translateY(-50%);
+    height: 50%;
+    z-index: 2; /* To ensure the image stays on top of the background */
+}
+
+.content-text {
+    z-index: 3; /* To ensure the text stays on top of the foreground image */
+}
+
+.testimony {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.testimony-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* For Webkit (Chrome, Safari) */
+progress[value]::-webkit-progress-bar {
+  background-color: black;
+}
+progress[value]::-webkit-progress-value {
+  background-color: white;
+}
+
+/* For Firefox */
+progress[value]::-moz-progress-bar {
+  background-color: white;
+}
+
+#text-container1 {
+    width: 40%; 
+    margin-left: 60%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    white-space: nowrap;  /* Added this line to prevent wrapping */
+}
+
+ul li::before {
+    content: ">";
+    margin-right: 10px;
+}
+
+/* ChatGPT: Start of updated styles for BMI and Body Fat Percentage Form */
+.bmi-form, .body-fat-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 200px;
+}
+
+input{
+	border-radius: 10px;
+	padding-left: 3%;
+}
+
+select {
+    border-radius: 6px; /* Adjust this value to achieve the desired roundness */
+	min-width: 40%;
+	padding-left: 7%;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+/* ChatGPT: End of updated styles for BMI and Body Fat Percentage Form */
+
+
+/* ChatGPT: Start of styles for calculator form wrapper */
+.calculator-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #1b8b00;
+	background-image: linear-gradient(134deg, #1b8b00 0%, #a2d240 74%);
+    background-size: cover;
+    padding-top: 50px;
+	padding-left: 10%;
+	padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+/* ChatGPT: End of styles for calculator form wrapper */
+
+
+/* Updated styles for the new BMI form panel */
+.bmi-panel {
+    background-color: #fff; /* White background */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for 3D effect */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px auto;  /*Centering and spacing */
+    max-width: 30%; /* Limit the width */
+}
+
+/* Additional style to fix the weight input box and label positioning */
+.form-group label {
+    display: inline-block;
+    width: 100%;
+	color: white;
+}
+
+/* Styles for the BMI heading wrapper */
+.bmi-heading-wrapper {
+    background-color: rgba(255, 255, 255, 0.9); /* Partially transparent white background */
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+	width: 30%;
+	margin-left: 35%;
+}
+
+.JoinUs-wrapper {
+    background-color: rgba(255, 255, 255, 0.9); /* Partially transparent white background */
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+	width: 50%;
+	margin-top: 80px;
+	margin-left: 25%;
+}
+
+#calculate-bmi {
+  /*background: #5E5DF0; */
+  background: #4CAF50;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-left: 25%;
+}
+
+    .landing-panel .typewriter-text {
+        /* Ensuring the text is fully visible and below the image */
+        width: 60%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Corrected text visibility for .typewriter-text */
+.typewriter-text {
+    min-height: 60px;  /* Providing a minimum height to ensure text visibility */
+}
+
+/* Corrected layout and overflow issues */
+
+    .landing-panel {
+        overflow: hidden;  /* To prevent any child elements from causing overflow */
+    }
+    .typewriter-text {
+        max-width: 100%;  /* To ensure the text fits within the viewport */
+    }
+}
+
+/* Final adjustments for text visibility */
+.typewriter-text {
+    min-height: 100px;  /* Increased minimum height */
+    display: inline-block;  /* To make sure it takes only as much width as it needs */
+    white-space: nowrap;  /* To prevent text from breaking into multiple lines */
+    overflow: hidden;  /* To hide overflow, if any */
+}
+
+#bmi-result{
+	text-align: center;
+	font: arial;
+	background-color:  #4CAF50;
+	color: white;
+	border-radius: 10px;
+	font-size: 20px;
+	margin-top: -15px;
+}
+
+#body-fat-waist{
+	margin-bottom: 10px;
+}
+
+ol li{
+	text-align: left;
+}
+
+.LegalHeading1{
+	margin-bottom: 20px;
+}
+
+
+/* ChatGPT worked here: Added fixed height to result placeholder */
+.result-placeholder {
+    height: 100px;
+}
+
+/* Fixed height for the Testimony section */
+.testimony-fixed-height {
+    min-height: 400px;
+}
+
+/* Style for the new legal links at the bottom */
+.legal-links {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Styles for modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding-right: 20px;
+  width: 80%;
+}
+
+.close-button {
+  margin-left: 11750%;
+  color: #aaa;
+  font-size: 28px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Decrease font size for mobile view */
+@media (max-width: 768px) {
+	
+#body-fat-waist{
+	margin-left: 30%;
+	margin-bottom: 10px;
+}
+
+	
+.typewriter-text {
+    font-size: 14px;  /* Reduced font size for mobile screens */
+    line-height: 1.2;  /* From the second definition */
+    white-space: normal;  /* From the second definition */
+}
+
+.bmi-heading-wrapper {
+    background-color: rgba(255, 255, 255, 0.9); /* Partially transparent white background */
+    border-radius: 15px;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.JoinUs-wrapper {
+    background-color: rgba(255, 255, 255, 0.9); /* Partially transparent white background */
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+	width: 90%;
+	margin-top: 80px;
+	margin-left: 5%;
+}
+
+.bmi-panel {
+    background-color: #fff; /* White background */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for 3D effect */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 80%; /* Limit the width */
+}
+
+	#calculator-form {
+	width: 45%;
+	margin-left: -170px;
+	}
+
+	.content-section {   
+    height: auto;
+	min-height:220px;
+	background-image: url('Section1_Responsive.png');
+    position: relative;
+    background-size: 100% auto, cover;
+    background-position: center top;
+	background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding-left: 0%;
+}
+
+ul li {
+    margin-bottom: 1px;
+    white-space: nowrap;  /* Added this line to prevent wrapping */
+	margin-left: -33px;
+}
+
+ul li::before {
+    content: ">";
+    margin-right: 5px;
+}
+
+	.landing-panel {
+    background-size: 100% auto, cover;  /* From the third definition */
+    background-position: center top;  /* Both second and third definition have the same value */
+    background-repeat: no-repeat;  /* From the second definition */
+    height: auto;  /* From the third definition */
+    flex-direction: column;  /* From the third definition */
+    justify-content: flex-start;  /* From the third definition */
+    align-items: center;  /* From the third definition */
+    padding-top: 70px;  /* From the third definition */
+    margin-top: 75px;  /* From the third definition */
+	}
+	
+    
+    .foreground-img {
+        height: 40%; /* Adjust foreground image size */
+    }
+    
+    .typewriter-text, .content-text h2, .content-text p {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .testimony-img {
+        width: 80px;
+        height: 80px; /* Reduce image size for testimonies */
+    }
+
+    .testimony h3, .testimony p {
+        font-size: 16px; /* Adjust font size for testimonies */
+    }
+	
+	.section1Heading {
+		font-size: 16px;
+		margin-bottom: -15px;
+		margin-left: -33px;
+	}
+
+    .contact-me {
+        padding: 30px; /* Adjust padding */
+    }
+
+    .social-icon {
+        font-size: 20px; /* Adjust social icon size */
+    }
+	#calculator-form {
+	width: 45%;
+	margin-left: -50%;
+	}
+	
+	input{
+		margin-left: 25%;
+		width: 160%;
+	}
+	
+	.landing-panel .typewriter-text {
+    width: 100%;  /* From the single definition */
+    text-align: center;  /* From the single definition */
+    margin-top: 8px;  /* From the single definition */
+	}
+	
+	.navbar-logo {
+        max-height: 50px;  /* Limit the height of the logo */
+        width: auto;  /* Width will be auto-adjusted */
+    }
+	
+    #calculate-bmi {
+		margin-left: 50%;
+        width: 100%;
+        font-size: 16px;
+    }
+	.carousel-inner .carousel-item .row > div {
+      display: none !important;
+	}
+	.carousel-inner .carousel-item .row > div:first-child {
+      display: block !important;
+	}
+	
+	.close-button {
+		color: #aaa;
+		font-size: 28px;
+		margin-left: 2700%;
+	}
+	
+	.modal-content {
+		background-color: #fff;
+		margin: 25% auto;
+		padding-right: 20px;
+		width: 80%;
+	}
+	
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<title>KayakalpWithSaket</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#"><img class="navbar-logo" src="logo.jpg"/>KayakalpWithSaket</a>
+</nav>
+<progress class="progress-bar" id="pageProgress" max="100" value="0"></progress>
+<div class="landing-panel">
+<div class="typewriter-text mobile-friendly-text" data-text="Welcome to the start of your journey towards disease-free living"></div>
+</div>
+<section class="content-section">
+<div id="text-container1">
+<h3 class="section1Heading">We provide solution for:</h3> <br/>
+<ul>
+<li>Heart Health</li>
+<li>Joint &amp; Bones Health</li>
+<li>Immune Health</li>
+<li>Digestive Health</li>
+<li>Obesity</li>
+<li>Diabetes &amp; much more</li>
+</ul>
+</div>
+</section>
+<!-- Body Fat & BMI Calculator Form -->
+<div class="calculator-container" style="background-image: url('BMISection.png');">
+<div class="bmi-heading-wrapper"><h3 class="BMICalculatorHeading" style="color: black">Your BMI Calculator</h3></div>
+<div class="bmi-panel">
+<div class="calculator-form-wrapper">
+<form id="calculator-form">
+<!-- Input for Weight -->
+<div class="form-group">
+<label for="weight">Weight (kg):</label>
+<input id="bmi-weight" name="weight" required="" type="number"/>
+</div> <!-- </div> -->
+<!-- Input for Height -->
+<div class="form-group">
+<label for="height">Height (cm):</label>
+<input id="bmi-height" name="height" required="" type="number"/>
+</div>
+<!-- Input for Age -->
+<div class="form-group">
+<label for="age">Age:</label>
+<input id="body-fat-weight" name="age" required="" type="number"/>
+</div>
+<!-- Input for Gender -->
+<div class="form-group">
+<label for="gender">Gender:</label>
+<select id="body-fat-waist" name="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+<!-- Button to Calculate -->
+<button id="calculate-bmi" type="button">Calculate</button>
+</form>
+</div>
+<!-- Results Display -->
+<div id="calculate-body-fat">
+<!-- ChatGPT worked here: Added minimum height to bmi-result -->
+<p id="bmi-result"></p>
+</div>
+</div>
+
+<div class="JoinUs-wrapper"><h5 class="BMICalculatorHeading" style="color: black">Contact us to be a part of a community that is always ready to help each other.</h5></div>
+
+</div>
+<!-- <div id="mobileSection" style="display:none;"></div> -->
+<section class="testimony" id="mobileSection" style="display:none;"></section>
+<!-- <div id="desktopSection" style="display:none;"></div> -->
+<section class="testimony" id="desktopSection" style="display:none;"></section>
+<section class="contact-me">
+<h2 style="margin-bottom: 30px;">Contact us for a free 3-day trial</h2>
+<p><i class="fab fa-whatsapp"></i> +919415443788,+919415865118</p>
+<!-- Social Links -->
+<a class="social-icon" href="your-facebook-link"><i class="fab fa-facebook"></i></a>
+<a class="social-icon" href="your-instagram-link"><i class="fab fa-instagram"></i></a>
+<a class="social-icon" href="your-instagram-link"><i class="fab fa-youtube"></i></a>
+<a class="social-icon" href="your-instagram-link"><i class="fab fa-twitter"></i></a>
+<br/><br/>
+<a class="legal-links" href="javascript:openModal('disclaimer-modal')">Disclaimer</a>
+<!-- Modal for Disclaimer -->
+<div class="modal" id="disclaimer-modal">
+<div class="modal-content">
+<div style="width: 10px;">
+<span class="close-button" id="disclaimer-close">×</span>
+</div>
+<h3 class="LegalHeading1"> Disclaimer</h3>
+<ol>
+<li> The content, information, articles, links, and other materials provided by KayakalpWithSaket ("we", "our", "us") on this website and our affiliated platforms are for informational purposes only. We are neither medical doctors, registered dietitians, nor healthcare providers of any kind.
+<li> Our website aims to offer lifestyle and dietary guidance, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified healthcare providers with any questions you may have regarding a medical condition. If you are experiencing a medical emergency, please seek immediate medical attention.
+<li> Product tesimonials are not typical, individual results may vary. Products are not intended to diagnose, treat, cure, or prevent any disease. 
+<li> The products are not drugs or medicine. It is food, food gives body nutrition. Your body uses nutrition to heal itself.
+<li> Participation in any programs, advice, or treatment provided by KayakalpWithSaket is at your own risk. You agree to release KayakalpWithSaket and its staff, agents, and partners from any and all claims or causes of action, known or unknown.
+</ol>
+</div>
+</div>
+
+<span>·</span>
+<a class="legal-links" href="javascript:openModal('terms-and-conditions-modal')">Terms and Conditions</a>
+<!-- Modal for Terms and Conditions -->
+<div class="modal" id="terms-and-conditions-modal">
+<div class="modal-content">
+<div style="width: 10px;">
+<span class="close-button" id="terms-and-conditions-close">×</span>
+</div>
+<h3 class="LegalHeading1">Terms and Conditions</h3>
+By accessing or using the services provided by KayakalpWithSaket, you agree to comply with and be bound by these Terms and Conditions. <br><br>
+<ol>
+<li> Membership Fees: All membership fees are non-refundable and non-transferable. Failure to pay membership fees may result in termination of services.
+<li> Our website aims to offer lifestyle and dietary guidance, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified healthcare providers with any questions you may have regarding a medical condition. If you are experiencing a medical emergency, please seek immediate medical attention.
+<li> Cancellation Policy: Members can cancel their subscription with a 7-day notice. However, membership fees for the current billing cycle of 30 days are non-refundable. 
+<li> Liability: KayakalpWithSaket is not liable for any injuries or health conditions that may occur during or after your participation in our services.
+<li> Modification: We reserve the right to update or modify these Terms and Conditions at any time.
+</ol>
+</div>
+</div>
+
+<span>·</span>
+<a class="legal-links" href="javascript:openModal('privacy-policy-modal')">Privacy Policy</a>
+<!-- Modal for Privacy Policy -->
+<div class="modal" id="privacy-policy-modal">
+<div class="modal-content">
+<div style="width: 10px;">
+<span class="close-button" id="privacy-policy-close">×</span>
+</div>
+<h3 class="LegalHeading1">Privacy Policy</h3>
+&nbsp;Your privacy is of utmost importance to us at KayakalpWithSaket. This policy outlines how we collect, use, and protect your personal information. <br><br>
+<ol>
+<li> Data Collection: We collect basic personal information such as your name, email address, age, and health goals to tailor our services to your needs.
+<li> Data Usage: The data collected is used exclusively for the purpose of providing you with relevant services, and will never be sold to third-party companies knowingly.
+<li> Cookies: Our website may use cookies to enhance user experience. You can turn off the use of cookies at any time by modifying your browser settings. 
+<li> Google Analytics: We use Google Analytics to collect anonymized data on visitor behavior to improve our services and user experience. This data may include IP addresses, browser types, and other generic data. Google's privacy policy applies to this data collection.
+<li> Third-Party Links: Our website may contain links to other sites. We are not responsible for the privacy practices of such other sites.
+<li> Changes to this Policy: We reserve the right to change this privacy policy at any time. Any changes will be posted on this page, and we encourage you to review our privacy policy periodically.
+</ol>
+</div>
+</div>
+
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
