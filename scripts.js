@@ -70,7 +70,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const bmi = weight / (height * height);
         // ChatGPT worked here: Updated code to display result in correct location
-document.getElementById('bmi-result').innerText = 'Your BMI is: ' + bmi.toFixed(2);
+document.getElementById('bmi-result').innerHTML = 'Your BMI is: ' + bmi.toFixed(2);
+
+document.getElementById('standard-bmi').innerHTML = 'BMI in the range of 18.5 to 24.9 is considered normal.';
+
 
     }
 
@@ -139,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="card-body">
       <h5 class="card-title">Banu</h5>
       <p class="card-text">Age: 52</p>
-      <p class="card-text">"I had melasma which is a skin disease on my face and had taken medications for years, but it only got worse, but thanks to KayakalpWithSaket, it is totally cured now without any medications."</p>
+      <p class="card-text">"I had melasma which is a skin disease on my face and had taken medications and expensive therapies for years, but it only got worse, but thanks to KayakalpWithSaket, it is totally cured now without any medications."</p>
     </div>
   </div>
 </div>
@@ -262,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="card-body">
       <h5 class="card-title">Banu</h5>
       <p class="card-text">Age: 52</p>
-      <p class="card-text">"I had melasma which is a skin disease on my face and had taken medications for years, but it only got worse, but thanks to KayakalpWithSaket, it is totally cured now without any medications."</p>
+      <p class="card-text">"I had melasma which is a skin disease on my face and had taken medications and expensive therapies for years, but it only got worse, but thanks to KayakalpWithSaket, it is totally cured now without any medications."</p>
     </div>
   </div>
 </div>
