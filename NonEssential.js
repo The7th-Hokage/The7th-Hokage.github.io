@@ -1,3 +1,32 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const textContainer1 = document.getElementById("text-container1");
+    const ulElement = textContainer1.querySelector("ul");
+    const listItems = Array.from(ulElement.querySelectorAll("li"));
+    ulElement.innerHTML = ""; // Clear existing bullet points
+
+    let listItemIndex = 0;
+    const displayInterval = setInterval(() => {
+        if (listItemIndex < listItems.length) {
+            const listItem = document.createElement("li");
+            const textContent = listItems[listItemIndex].textContent;
+            ulElement.appendChild(listItem);
+
+            let charIndex = 0;
+            const charDisplayInterval = setInterval(() => {
+                if (charIndex < textContent.length) {
+                    listItem.textContent += textContent[charIndex];
+                    charIndex++;
+                } else {
+                    clearInterval(charDisplayInterval); // Stop interval when all characters are displayed
+                }
+            }, 100); // Display each character every 100 milliseconds
+
+            listItemIndex++;
+        } else {
+            clearInterval(displayInterval); // Stop interval when all bullet points are displayed
+        }
+    }, 2000); // Display each bullet point every 2 seconds to give time for characters to appear
+});
 
 // ChatGPT: Start of JavaScript for BMI and Body Fat Percentage Calculation
 
