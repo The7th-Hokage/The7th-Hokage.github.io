@@ -162,6 +162,40 @@ document.addEventListener("DOMContentLoaded", function() {
     
 <div class="col-md-4">
   <div class="card testimony-card">
+    <img class="card-img-top" src="Bitti.png">
+    <div class="card-body">
+      <h5 class="card-title">Suchita</h5>
+      <p class="card-text">Age: 50</p>
+      <p class="card-text">"KayakalpWtihSaket has helped me reduce 10kgs of weight within 2 months of starting their program."</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="carousel-item ">
+  <div class="row">
+    
+<div class="col-md-4">
+  <div class="card testimony-card">
+    <img class="card-img-top" src="Shyam.png">
+    <div class="card-body">
+      <h5 class="card-title">Shyam</h5>
+      <p class="card-text">Age: 52</p>
+      <p class="card-text">"KayakalpWtihSaket has helped me reduce 16kgs of weight in just 2 months time from the time I started their program."</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="carousel-item ">
+  <div class="row">
+    
+<div class="col-md-4">
+  <div class="card testimony-card">
     <img class="card-img-top" src="Next.jpg">
     <div class="card-body">
       <h5 class="card-title">You</h5>
@@ -269,6 +303,36 @@ document.addEventListener("DOMContentLoaded", function() {
       <h5 class="card-title">Rajesh</h5>
       <p class="card-text">Age: 58</p>
       <p class="card-text">"KayakalpWtihSaket has helped me reduce 21kgs of weight. I have much more energy and live a healthier and happier life now. Thanks to my coach and community."</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card testimony-card">
+    <img class="card-img-top" src="Shyam.png">
+    <div class="card-body">
+      <h5 class="card-title">Shyam</h5>
+      <p class="card-text">Age: 52</p>
+      <p class="card-text">"KayakalpWtihSaket has helped me reduce 16kgs of weight in just 2 months time from the time I started their program."</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Fourth Set of Testimonies -->
+
+<div class="carousel-item ">
+  <div class="row">
+    
+<div class="col-md-4" style="margin-left: 240px;">
+  <div class="card testimony-card">
+    <img class="card-img-top" src="Bitti.png">
+    <div class="card-body">
+      <h5 class="card-title">Suchita</h5>
+      <p class="card-text">Age: 50</p>
+      <p class="card-text">"KayakalpWtihSaket has helped me reduce 10kgs of weight within 2 months of starting their program."</p>
     </div>
   </div>
 </div>
